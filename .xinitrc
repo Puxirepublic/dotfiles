@@ -1,1 +1,0 @@
-/home/puxi/.xinitrc
