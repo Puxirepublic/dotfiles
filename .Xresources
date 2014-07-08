@@ -1,1 +1,71 @@
-/home/puxi/.Xresources
+Xft.dpi:                96
+Xft.antialias:          1
+Xft.hinting:            1
+Xft.rgba:               rgb
+Xft.autohint:           0
+Xft.hintstyle:          hintfull
+Xft.lcdfilter:          lcddefault
+
+URxvt*font:             xft:meslo lg s for powerline:pixelsize=12:antialias=false,\
+                        xft:Fantasque Sans Mono:pixelsize=13:antialias=false,\
+                        xft:xhei intelt:antialias=false
+URxvt*boldFont:         xft:meslo lg s for powerline:pixelsize=12:antialias=false,\
+                        xft:Fantasque Sans Mono:pixelsize=13:antialias=false,\
+                        xft:xhei intelt:antialias=false
+                        
+URxvt*imFont:           xft:meslo lg s for powerline:pixelsize=12
+
+!Input Method
+URxvt*preeditType:      Root
+URxvt*inputMethod:      fcitx
+
+URxvt.scrollBar:        false
+URxvt.fading:           false
+URxvt.shading:          false
+URxvt.geometry:         135x39
+URxvt.saveLines:        1000
+URxvt*termName:         rxvt-unicode-256color
+urxvt*internalBorder:   0
+
+URxvt.perl-ext-common:  default,matcher
+URxvt.matcher.button:   1
+URxvt.url-launcher:     /usr/bin/firefox
+
+URxvt*background:       #171717
+URxvt*foreground:       #dadada
+URxvt*cursorColor:      #c8c8c8
+URxvt.colorUL:          #8F7798
+
+!Black
+*color0:                #3E3E3F
+*color8:                #484849
+
+!Red
+*color1:                #89657a
+*color9:                #ab9db0
+
+!Green
+*color2:                #4B8563
+*color10:               #73B798 
+
+!Yellow
+*color3:                #85804B
+*color11:               #ACC285
+
+!Blue
+*color4:                #5c69a4
+*color12:               #949ec6
+
+!Magenta
+*color5:                #8565a4
+*color13:               #a89dc6
+
+!Cyan
+*color6:                #5c92a0
+*color14:               #94b4c3
+
+!White
+*color7:                #a5a5a5
+*color15:               #FFFFFF
+
+!xrdb -merge ~/.Xresources
