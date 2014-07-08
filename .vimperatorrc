@@ -1,0 +1,73 @@
+"3.8.1 (created: 2013/11/21 23:49:14)
+
+highlight CmdLine background: #171717; color: white; transition: all 0.25s;
+highlight CmdLine>* font-family: lemon; font-size:11px; padding-top: 2px;
+highlight CompGroup font-family: lemon;
+highlight CompItem>* height: 18px; min-height: 18px; padding: 0 0.5ex;font-family:lemon; font-size:11px;
+highlight CompItem[selected] background: #1e1e1e; color: #fff;
+highlight CompTitle background: #171717;
+highlight CompTitle>* color: #00a2aa; 
+highlight ContentSeparator border-top: none;
+highlight ErrorMsg color: #f82c2c; background: #171717; font-family: lemon; font-size:11px;
+highlight Filter background: #5c737c; color:#000; border-radius: 2px; border: 1px solid #385e6b; 
+highlight Hint font-family: sans; font-size: 11px !important; font-weight: bold; text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.6)!important; border: 0 !important;
+highlight HintActive background-color: rgba(42,159,144,0.4) !important;
+highlight HintElem background-color: rgba(160,160,160,0.2) !important;
+highlight Indicator color: #1e6a9a;
+highlight InfoMsg color: #5A9181; background: #171717;font-family: lemon; font-size:11px;
+highlight Keyword color: #ffaa3e;
+highlight ModeMsg color:#fff; background: #6E6096; border-radius: none; padding: 0px 5px;font-family: lemon; font-size:11px;
+highlight NonText color: #1e6a9a; min-height: 16px; padding-left: 2px;
+highlight Normal color: #b3b3b3; background: #171717; 
+highlight PromptText color: #00a2aa; background: #171717;
+highlight StatusLine color:#dedede;font-family:lemon;font-size:11px;
+highlight Tag color: #909737;
+highlight Title color: #7d2d41; background: #171717; font-family: lemon;
+highlight URL text-decoration: none; color:#5c737c;
+highlight WarningMsg color:#f82c2c; background: #171717;font-family:lemon; font-size:11px;
+
+nnoremap j 5j
+nnoremap k 5k
+noremap h 4h
+noremap l 4l
+noremap H h
+noremap L l
+noremap h gT
+noremap l gt
+noremap , H
+noremap . L
+noremap i gi
+noremap p P
+map gt <C-t>
+map J <C-d>
+map K <C-u>
+"map ZZ <lt>ZQ>
+map <C-1> :sidebar<Space>bookmarks<Return>
+map <C-2> :sbclose<Return>
+map <C-3> thttp://www.bilibili.com/<Return>
+map x thttp://cn.bing.com/dict/<Return>
+
+set focuscontent
+set complete=lb
+set hintchars=asdfgqwert
+set titlestring=DarkSouls
+source! /home/puxi/.vimperatorrc.local
+"vim: set ft=vimperator:
+
+style -name statusbar chrome://* <<EOM
+#liberator-statusline {
+min-height: 10px !important;
+max-height: 10px !important;
+}
+EOM
+
+map <silent> <C-`> :js toggle_bottombar()<CR>
+:js << EOF
+function toggle_bottombar() {
+    var bb = document.getElementById('liberator-bottombar');
+    if (!bb)
+        return;
+    bb.style.height = (bb.style.height == '') ? '0px' : '';
+    bb.style.overflow = (bb.style.height == '') ? '' : 'hidden';
+    }
+EOF
