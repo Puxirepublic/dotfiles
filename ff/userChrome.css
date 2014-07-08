@@ -38,7 +38,7 @@ max-height: 15px !important;*/
 }  
 
 .tabbrowser-tab[selected=true] {
-color: #D2D0D5 !important;
+color: #fff !important;
 background: #2D2A30 !important; /*#202020*/
 border-bottom: 0px !important;
 box-shadow: none !important;
@@ -58,7 +58,7 @@ min-width: 30px !important;
 max-width: 100% !important;
 }
 
-/* HIDE */
+/* HIDDEN */
 toolbarbutton#appmenu-toolbar-button,
 toolbarbutton#alltabs-button,
 toolbarbutton#new-tab-button,
