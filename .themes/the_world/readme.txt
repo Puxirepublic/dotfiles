@@ -1,4 +1,4 @@
-*Moded*
+*Modded*
 
 ----------------------------------------------------
 Author: Rafa Cobreros rafacobreros@gmail.com
