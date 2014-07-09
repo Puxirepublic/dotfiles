@@ -7,7 +7,7 @@ const progressListener = {
 
     onSecurityChange: function onSecurityChange(webProgress, request, state) {
         if (state & Ci.nsIWebProgressListener.STATE_IS_INSECURE)
-            highlight.set("StatusLine", "color:#D2D0D5;font-family:lemon;font-size:10px;");
+            highlight.set("StatusLine", "color:#D2D0D5;font-family:lemon;font-size:10px;font-weight:normal;");
         else if (state & Ci.nsIWebProgressListener.STATE_IS_BROKEN)
             highlight.set("StatusLine", "color:#AD96EB; background:#171717;font-family:lemon;font-size:10px;");
         else if (state & Ci.nsIWebProgressListener.STATE_IDENTITY_EV_TOPLEVEL)
