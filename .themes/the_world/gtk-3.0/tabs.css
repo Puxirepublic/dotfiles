@@ -25,9 +25,9 @@
 }
 
 .notebook tab {
-    border-width: 0px 0px 0px 4px;
+    border-width: 0px 0px 0px 2px;
     border-style: solid; 
-	border-radius: 0px 30px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
 
 	border-top-color: 		@theme_tab_bg_color;
 	border-left-color: 		@theme_bg_color;
