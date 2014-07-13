@@ -1,5 +1,5 @@
 gtk-color-scheme = "base_color:#212122\nbg_color:#171717"
-gtk-color-scheme = "text_color:#c9c8c7\nfg_color:#dadada"
+gtk-color-scheme = "text_color:#E4DCDA\nfg_color:#EEE9EA"
 gtk-color-scheme = "tooltip_bg_color:#161616\ntooltip_fg_color:#ffffff\nlink_color:#7B7283"
 gtk-color-scheme = "selected_fg_color:#fff"
 gtk-color-scheme = "selected_bg_color:#403B44"
@@ -61,7 +61,7 @@ style "default" {
 	GtkScrollbar    		::has-backward-stepper		= 0  
 	GtkScrollbar			::has-forward-stepper		= 0   # El maldito rollo de gtk2 y las scrollbars
 	GtkScrollbar			::min-slider-length		= 15
-	GtkScrollbar			::slider-width			= 8
+	GtkScrollbar			::slider-width			= 7
 	GtkScrollbar			::trough-border			= 0
 	GtkScrollbar			::activate-slider 		= 0
 	GtkScrollbar			::trough-side-details		= 0
@@ -98,7 +98,7 @@ style "default" {
 	fg[NORMAL]          = @fg_color
 	fg[PRELIGHT]		= @text_color
 	fg[SELECTED]		= @selected_fg_color
-	fg[INSENSITIVE] 	= shade (0.75, @fg_color)
+	fg[INSENSITIVE] 	= shade (0.35, @fg_color)
 	fg[ACTIVE]			= @fg_color
 	#fg[ACTIVE]			= @text_color
 
@@ -374,8 +374,8 @@ style "progressbar" {
 
 	engine "murrine" {
 		gradient_shades		= {1.00, 1.00, 1.00, 1.00}
-		contrast 			= 0.0		
-		roundness			= 1
+		contrast 		= 0.0		
+		roundness		= 1
 	}
 }
 
