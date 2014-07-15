@@ -11,7 +11,7 @@ function Time() {
 	ss = check(ss);
 	mo = check(mo);
 	dd = check(dd);
-	document.getElementById('date').innerHTML = hh+":"+mm;
+	document.getElementById('date').innerHTML = hh+""+mm;
 	var t = setTimeout(function(){Time()},500);
 }
 function check(i) {

@@ -1,30 +1,30 @@
 "3.8.1 (created: 2013/11/21 23:49:14)
 
-highlight CmdLine background: #171717; color: white; transition: all 0.25s;
-highlight CmdLine>* font-family: lemon; font-size:10px; padding-top: 2px;
-highlight CompGroup font-family: lemon;
-highlight CompItem>* height: 18px; min-height: 18px; padding: 0 0.5ex;font-family:lemon; font-size:10px;
-highlight CompItem[selected] background: #1e1e1e; color: #fff;
-highlight CompTitle background: #171717;
-highlight CompTitle>* color: #00a2aa; 
-highlight ContentSeparator border-top: none;
-highlight ErrorMsg color: #f82c2c; background: #171717; font-family: lemon; font-size:10px;
-highlight Filter background: #5c737c; color:#000; border-radius: 2px; border: 1px solid #385e6b; 
-highlight Hint font-family: sans; font-size: 11px !important; font-weight: bold; text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.6)!important; border: 0 !important;
-highlight HintActive background-color: rgba(42,159,144,0.4) !important;
-highlight HintElem background-color: rgba(160,160,160,0.2) !important;
+highlight CmdLine background:#171717; color:white; transition:all 0.25s;
+highlight CmdLine>* font-family:lemon; font-size:10px; padding-top:2px; font-weight:normal;
+highlight CompGroup font-family:lemon;
+highlight CompItem>* height:18px; min-height:18px; padding:0 0.5ex; font-family:lemon; font-size:10px;
+highlight CompItem[selected] background:#1e1e1e; color:#fff;
+highlight CompTitle background:#171717;
+highlight CompTitle>* color:#00a2aa; 
+highlight ContentSeparator border-top:none;
+highlight ErrorMsg color:#D93452; background:#171717; font-family:lemon; font-size:10px;
+highlight Filter background:#5c737c; color:#000; border-radius:2px; border:1px solid #385e6b; 
 highlight Indicator color: #1e6a9a;
-highlight InfoMsg color: #5A9181; background: #171717;font-family: lemon; font-size:10px;
-highlight Keyword color: #ffaa3e;
-highlight ModeMsg color:#fff; background: #6E6096; border-radius: none; padding: 0px 5px;font-family: lemon; font-size:11px;
-highlight NonText color: #1e6a9a; min-height: 16px; padding-left: 2px;
-highlight Normal color: #b3b3b3; background: #171717; 
-highlight PromptText color: #00a2aa; background: #171717;
-highlight StatusLine color:#dedede;font-family:lemon;font-size:10px;
-highlight Tag color: #909737;
+highlight InfoMsg color:#5A9181; background: #171717; font-family:lemon; font-size:10px; font-weight:normal;
+highlight Keyword color:#E0948B;
+highlight Tag color:#ADE08B;
+highlight ModeMsg color:#222; background:#6E6096; border-radius:none; padding:0px 5px; font-family:lemon; font-size:10px; font-weight:normal;
+highlight NonText color:#1e6a9a; min-height:16px; padding-left:2px;
+highlight Normal color:#b3b3b3; background:#171717; 
+highlight PromptText color:#00a2aa; background:#171717;
+highlight StatusLine color:#dedede; font-family:lemon; font-size:10px;
 highlight Title color: #7d2d41; background: #171717; font-family: lemon;
-highlight URL text-decoration: none; color:#5c737c;
-highlight WarningMsg color:#f82c2c; background: #171717;font-family:lemon; font-size:11px;
+highlight URL text-decoration:none; color:#6E6096;
+highlight WarningMsg color:#D93452; background:#171717; font-family:lemon; font-size:10px;
+highlight Hint font-family: sans; font-size: 11px !important; font-weight: bold; text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.6)!important; border: 0 !important;
+highlight HintActive background-color:rgba(42,159,144,0.4) !important;
+highlight HintElem background-color:rgba(160,160,160,0.2) !important;
 
 nnoremap j 5j
 nnoremap k 5k

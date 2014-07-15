@@ -109,9 +109,9 @@ markup = lain.util.markup
 gray = "#a3a3a3"
 --|SEPARATOR|
 separator = wibox.widget.textbox()
-separator:set_markup("<span color='#353535' font='meslo lg s for powerline 9' >  </span>")
+separator:set_markup("<span color='#433F42' font='meslo lg s for powerline 8' >  </span>")
 separator2 = wibox.widget.textbox()
-separator2:set_markup("<span color='#353535' font='meslo lg s for powerline 9' >  </span>")
+separator2:set_markup("<span color='#433F42' font='meslo lg s for powerline 8' >  </span>")
 space = wibox.widget.textbox()
 space:set_markup(" ")
 --|MPD|
