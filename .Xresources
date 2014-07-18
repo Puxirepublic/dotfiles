@@ -7,10 +7,10 @@ Xft.hintstyle:          hintfull
 Xft.lcdfilter:          lcddefault
 
 URxvt*font:             xft:meslo lg s for powerline:pixelsize=12:antialias=false,\
-                        xft:Fantasque Sans Mono:pixelsize=13:antialias=false,\
+                        xft:Fantasque Sans Mono:pixelsize=14:antialias=false,\
                         xft:xhei intelt:antialias=false
 URxvt*boldFont:         xft:meslo lg s for powerline:pixelsize=12:antialias=false,\
-                        xft:Fantasque Sans Mono:pixelsize=13:antialias=false,\
+                        xft:Fantasque Sans Mono:pixelsize=14:antialias=false,\
                         xft:xhei intelt:antialias=false
                         
 URxvt*imFont:           xft:meslo lg s for powerline:pixelsize=12
@@ -23,7 +23,8 @@ URxvt.scrollBar:        false
 URxvt.fading:           false
 URxvt.shading:          false
 URxvt.geometry:         135x39
-URxvt.saveLines:        1000
+URxvt.depth:            32
+URxvt.saveLines:        5000
 URxvt*termName:         rxvt-unicode-256color
 urxvt*internalBorder:   0
 
