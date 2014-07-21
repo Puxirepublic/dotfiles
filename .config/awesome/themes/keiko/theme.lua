@@ -17,7 +17,7 @@ theme.fg_minimize   = "#87878A"
 
 theme.border_width      = 2
 theme.border_normal     = "#171717"
-theme.border_focus      = "#39363D" --"#39363D"
+theme.border_focus      = "#978E9C" --"#39363D"
 theme.border_marked     = "#91231c"
 theme.useless_gap_width = 10
 -- [taglist|tasklist]_[bg|fg]_[focus|urgent]

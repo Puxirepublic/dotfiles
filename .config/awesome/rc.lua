@@ -124,7 +124,7 @@ mpdwidget = lain.widgets.mpd({
         title = mpd_now.title .. ""
 
         if mpd_now.state == "pause" then
-            artist = "mpd "
+            artist = "T_T "
             title = "paused "
         elseif mpd_now.state == "stop" then
             artist = "NULL"
@@ -276,10 +276,10 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "Up",    function () awful.client.moveresize( 0,  -1,    0,   0) end),
     awful.key({ modkey }, "Left",  function () awful.client.moveresize(-1,   0,    0,   0) end),
     awful.key({ modkey }, "Right", function () awful.client.moveresize( 1,   0,    0,   0) end),
-    awful.key({ modkey , "Control" }, "Down", function () awful.client.moveresize( 0,   0,   0,   10) end),
-    awful.key({ modkey , "Control" }, "Up", function () awful.client.moveresize(   0,   0,   0,  -10) end),
-    awful.key({ modkey , "Control" }, "Left", function () awful.client.moveresize( 0,   0,  -10,   0) end),
-    awful.key({ modkey , "Control" }, "Right", function () awful.client.moveresize(0,   0,   10,   0) end),
+    awful.key({ modkey , "Control" }, "Down", function () awful.client.moveresize( 0,   0,   0,   1) end),
+    awful.key({ modkey , "Control" }, "Up", function () awful.client.moveresize(   0,   0,   0,  -1) end),
+    awful.key({ modkey , "Control" }, "Left", function () awful.client.moveresize( 0,   0,  -1,   0) end),
+    awful.key({ modkey , "Control" }, "Right", function () awful.client.moveresize(0,   0,   1,   0) end),
     awful.key({ modkey }, "Next",  function () awful.client.moveresize( 1,   1,   -2,  -2) end),
     awful.key({ modkey }, "Prior", function () awful.client.moveresize(-1,  -1,    2,   2) end),
     --APPS

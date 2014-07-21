@@ -1,4 +1,4 @@
-vo=[vdpau|vaapi]                    #vo=opengl-hq
+vo=[vdpau|vaapi]             #vo=opengl-hq
 fs=no                        # use fullscreen mode by default
 geometry=50%:50%             # force starting with centered window
 ao=alsa                      # audio driver
