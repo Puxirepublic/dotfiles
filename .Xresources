@@ -6,14 +6,14 @@ Xft.autohint:           0
 Xft.hintstyle:          hintfull
 Xft.lcdfilter:          lcddefault
 
-URxvt*font:             xft:meslo lg s for powerline:pixelsize=12:antialias=false,\
-                        xft:Fantasque Sans Mono:pixelsize=14:antialias=false,\
-                        xft:xhei intelt:antialias=false
-URxvt*boldFont:         xft:meslo lg s for powerline:pixelsize=12:antialias=false,\
-                        xft:Fantasque Sans Mono:pixelsize=14:antialias=false,\
-                        xft:xhei intelt:antialias=false
+URxvt*font:             xft:meslo lg s for powerline:pixelsize=14:antialias=false,\
+                        xft:Fantasque Sans Mono:pixelsize=15:antialias=false,\
+                        xft:xhei intelt:pixelsize=14:antialias=false
+URxvt*boldFont:         xft:meslo lg s for powerline:pixelsize=14:antialias=false,\
+                        xft:Fantasque Sans Mono:pixelsize=15:antialias=false,\
+                        xft:xhei intelt:pixelsize=14:antialias=false
                         
-URxvt*imFont:           xft:meslo lg s for powerline:pixelsize=12
+URxvt*imFont:           xft:meslo lg s for powerline:pixelsize=14
 
 !Input Method
 URxvt*preeditType:      Root
@@ -32,8 +32,8 @@ URxvt.perl-ext-common:  default,matcher
 URxvt.matcher.button:   1
 URxvt.url-launcher:     /usr/bin/firefox
 
-URxvt*background:       #171717
-URxvt*foreground:       #dadada
+URxvt*background:       [93]#171717
+URxvt*foreground:       #DDDADC
 URxvt*cursorColor:      #c8c8c8
 URxvt.colorUL:          #8F7798
 
@@ -70,3 +70,4 @@ URxvt.colorUL:          #8F7798
 *color15:               #FFFFFF
 
 !xrdb -merge ~/.Xresources
+
