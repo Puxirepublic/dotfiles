@@ -54,9 +54,8 @@ alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"
 alias amix='alsamixer'
 alias wee='weechat-curses'
 alias mu='xdg_menu --format awesome --root-menu /etc/xdg/menus/kde-applications.menu >~/.config/awesome/kdemenu.lua'
-alias jply="LC_ALL=ja_JP.utf8 playonlinux --run"
-#alias reboot='systemctl reboot'
-#alias shutdown='systemctl poweroff'
+alias jppol="LC_ALL=ja_JP.utf8 playonlinux --run"
+
 alias paci='sudo pacman -S'
 alias pacs='sudo pacman -Ss'
 alias pacr='sudo pacman -R'
@@ -67,5 +66,5 @@ alias pacq='pacman -Q'
 alias pacqi='pacman -Qi'
 alias pacsi='pacman -Si'
 alias pacql='pacman -Ql'
-alias pacqdt='pacman -Qdt'  # Unneeded packages
+alias pacqdt='pacman -Qdt'
 alias paclist='pacman -Qqen > pkglist.txt'

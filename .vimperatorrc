@@ -19,10 +19,10 @@ highlight NonText color:#1e6a9a; min-height:16px; padding-left:2px;
 highlight Normal color:#b3b3b3; background:#171717; 
 highlight PromptText color:#00a2aa; background:#171717;
 highlight StatusLine color:#dedede; font-family:lemon; font-size:10px;
-highlight Title color: #7d2d41; background: #171717; font-family: lemon;
+highlight Title color:#7d2d41; background:#171717; font-family:lemon;
 highlight URL text-decoration:none; color:#6E6096;
 highlight WarningMsg color:#D93452; background:#171717; font-family:lemon; font-size:10px;
-highlight Hint font-family: sans; font-size: 11px !important; font-weight: bold; text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.6)!important; border: 0 !important;
+highlight Hint font-family:sans; font-size:11px!important; font-weight:bold; text-transform:uppercase; color:white; background-color:rgba(0, 0, 0, 0.6)!important; border:0!important;
 highlight HintActive background-color:rgba(42,159,144,0.4) !important;
 highlight HintElem background-color:rgba(160,160,160,0.2) !important;
 
@@ -45,7 +45,8 @@ map K <C-u>
 map <C-1> :sidebar<Space>bookmarks<Return>
 map <C-2> :sbclose<Return>
 map <C-3> thttp://www.bilibili.com/<Return>
-map x thttp://cn.bing.com/dict/<Return>
+map <C-4> thttps://www.evernote.com/Home.action#<Return>
+map <C-5> thttps://delicious.com/pudongrepublic<Return>
 
 set focuscontent
 set complete=lb
