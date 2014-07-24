@@ -42,28 +42,28 @@ URxvt.colorUL:          #8F7798
 *color8:                #484849
 
 !Red
-*color1:                #89657a
-*color9:                #ab9db0
+*color1:                #b56473
+*color9:                #d39baa
 
 !Green
-*color2:                #4B8563
-*color10:               #73B798 
+*color2:                #869273
+*color10:               #beb0aa
 
 !Yellow
-*color3:                #85804B
-*color11:               #ACC285
+*color3:                #b59273
+*color11:               #d3b0aa
 
 !Blue
-*color4:                #5c69a4
-*color12:               #949ec6
+*color4:                #8764a1
+*color12:               #be9bbf
 
 !Magenta
-*color5:                #8565a4
-*color13:               #a89dc6
+*color5:                #b564a1
+*color13:               #d39bbf
 
 !Cyan
-*color6:                #5c92a0
-*color14:               #94b4c3
+*color6:                #8692a1
+*color14:               #beb0bf
 
 !White
 *color7:                #a5a5a5
