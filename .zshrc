@@ -1,11 +1,5 @@
-# Path to your oh-my-zsh configuration.
 ZSH=/usr/share/oh-my-zsh/
-# Look in ~/.oh-my-zsh/themes/
 ZSH_THEME="afowler"
-POWERLINE_NO_BLANK_LINE="true"
-POWERLINE_HIDE_GIT_PROMPT_STATUS="true"
-POWERLINE_DISABLE_RPROMPT="true"
-POWERLINE_HIDE_USER_NAME="true"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Set to this to use case-sensitive completion
@@ -25,9 +19,8 @@ DISABLE_LS_COLORS="false"
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
+ZSH_CUSTOM=~/.oh-my-zsh/custom/
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -40,14 +33,14 @@ export LESSHISTFILE=/dev/null
 # else
 #   export EDITOR='mvim'
 # fi
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+
 alias rm='rm -v'
 alias mv='mv -v'
 alias c='clear'
 alias e='exit'
 alias grep='grep --color=auto'
 alias dir='dir --color=auto'
+alias ls="ls --color=always -h"
 
 alias www='sudo systemctl start dhcpcd@enp1s0.service'
 alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'
@@ -68,3 +61,9 @@ alias pacsi='pacman -Si'
 alias pacql='pacman -Ql'
 alias pacqdt='pacman -Qdt'
 alias paclist='pacman -Qqen > pkglist.txt'
+# POWERLINE_NO_BLANK_LINE="true"
+# POWERLINE_HIDE_GIT_PROMPT_STATUS="true"
+# POWERLINE_DISABLE_RPROMPT="true"
+# POWERLINE_HIDE_USER_NAME="true"
+
+
