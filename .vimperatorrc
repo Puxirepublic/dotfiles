@@ -1,4 +1,3 @@
-"3.8.1 (created: 2013/11/21 23:49:14)
 
 highlight CmdLine background:#171717; color:white; transition:all 0.25s;
 highlight CmdLine>* font-family:lemon; font-size:10px; padding-top:2px; font-weight:normal;
@@ -45,8 +44,7 @@ map K <C-u>
 map <C-1> :sidebar<Space>bookmarks<Return>
 map <C-2> :sbclose<Return>
 map <C-3> thttp://www.bilibili.com/<Return>
-map <C-4> thttps://www.evernote.com/Home.action#<Return>
-map <C-5> thttps://delicious.com/pudongrepublic<Return>
+map <C-4> thttps://delicious.com/pudongrepublic<Return>
 
 set focuscontent
 set complete=lb

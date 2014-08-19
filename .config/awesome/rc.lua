@@ -2,14 +2,14 @@
 local gears     = require("gears")
 local awful     = require("awful")
 awful.rules     = require("awful.rules")
-require("awful.autofocus")
+                  require("awful.autofocus")
 local wibox     = require("wibox")
 local beautiful = require("beautiful")
 vicious         = require("vicious")
 local naughty   = require("naughty")
+local lain      = require("lain")
 local minitray  = require("minitray")
 xdg_menu        = require("kdemenu")
-local lain      = require("lain")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -58,10 +58,8 @@ local layouts =
     awful.layout.suit.tile.bottom,
     awful.layout.suit.fair.horizontal,
     awful.layout.suit.max
-    --awful.layout.suit.fair,
     --awful.layout.suit.spiral,
     --awful.layout.suit.spiral.dwindle,
-    --awful.layout.suit.max.fullscreen,
     --awful.layout.suit.magnifier
 }
 -- }}}
@@ -77,6 +75,7 @@ local layouts =
      tags[s] = awful.tag(tags.names, s, tags.layout)
  end
 -- }}}
+ 
 -- {{{ AUTOSTART
 function run_once(cmd)
   findme = cmd
@@ -89,7 +88,6 @@ end
 
 --run_once("xcmenu -d")
 run_once("nitrogen --restore")
---run_once("sh ~/.fehbg")
 run_once("compton")
 -- }}}
 
@@ -283,9 +281,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "Next",  function () awful.client.moveresize( 1,   1,   -2,  -2) end),
     awful.key({ modkey }, "Prior", function () awful.client.moveresize(-1,  -1,    2,   2) end),
     --APPS
-    awful.key({ modkey,            }, "d", function () awful.util.spawn("dolphin") end),
+    awful.key({ modkey,            }, "a", function () awful.util.spawn("dolphin") end),
     awful.key({ modkey,            }, "f", function () awful.util.spawn("firefox") end),
-    awful.key({ "Control", "Shift" }, "`", function () awful.util.spawn("ksysguard") end),
+    awful.key({ "Control",         }, "Escape", function () awful.util.spawn("ksysguard") end),
     awful.key({ modkey,            }, "z", function () awful.util.spawn("goldendict") end),
     awful.key({ modkey,            }, "s", function () awful.util.spawn("kcolorchooser") end),
     awful.key({ modkey,            }, "/", function () awful.util.spawn("keepassx") end),
@@ -336,7 +334,6 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "space", function () awful.layout.inc(layouts,  1) end),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
-    -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end)
     --awful.key({ modkey }, "x",
               --function ()
@@ -450,7 +447,6 @@ awful.rules.rules = {
            class =
            {
                 "Plugin-container",
-		--"Wine",
                 "Steam"
             }
         },

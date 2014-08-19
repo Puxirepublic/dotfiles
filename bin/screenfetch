@@ -1514,7 +1514,7 @@ detectgtk () {
 					gtk2Theme=${gtk2Theme//\"/}
 					gtkIcons=$(grep '^gtk-icon-theme-name' $HOME/.gtkrc-2.0 | awk -F'=' '{print $2}')
 					gtkIcons=${gtkIcons//\"/}
-					gtkFont=$(grep 'font_name' $HOME/.gtkrc-2.0 | awk -F'=' '{print $2}')
+					gtkFont=$(grep 'gtk-font-name' $HOME/.gtkrc-2.0 | awk -F'=' '{print $2}')
 					gtkFont=${gtkFont//\"/}
 				fi
 
@@ -1803,31 +1803,31 @@ asciiText () {
 				c6=$(getColor 'light green')
 				c7=$(getColor 'cyan')
 				c8=$(getColor 'yellow')
-				c9=$(getColor 'blue')
-				c10=$(getColor 'light blue')
+				c9=$(getColor 'light blue')
+				c10=$(getColor 'blue')
 				c11=$(getColor 'black')
 			fi
 			if [ -n "${my_lcolor}" ]; then c1="${my_lcolor}"; c2="${my_lcolor}"; fi
 			startline="1"
-			fulloutput=("${c3}                   ♂\`"
-"${c3}                  .♂+\`                 %s"
-"${c3}                 \`xxx/                %s"
-"${c3}                \`+xxxx:               %s"
-"${c3}               \`+xxxxxx:              %s"
-"${c3}               -+xxxxxx+:             %s"
-"${c4}             \`/:-:++xxxx+:            %s"
-"${c4}            \`/++++/+++++++:           %s"
-"${c4}           \`/+++++xxxx+++++:          %s"
-"${c4}          \`/+++o"${c4}"xxxxxxxx"${c4}"xxxx/\`        %s"
-"${c1}         "${c1}".+"${c1}"xxxxxxxxxxxxxxsssx"${c1}"+\`       %s"
-"${c1}        .xxsssxxx+"${c11}"DEEP"${c1}"+xxsssss+\`      %s"
-"${c10}       -xssssssxx+"${c11}"DARK"${c10}"+xsssssssx.     %s"
-"${c2}      :xsssssss/"${c11}"FAN♂TASY"${c2}"\ssssx+++.    %s"
-"${c2}     /xssssssx/          \sssxxx/-    %s"
-"${c2}   \`/xsssssx+/            \+xssssx+-  %s"
-"${c2}  \`+ssx+:-\`                 \`.-/xxsx: %s"
-"${c2} \`++:.                           \`-/+/%s"
-"${c2} .\`                                 \`/%s") 
+			fulloutput=("${c3}                   _\`"
+"${c3}                  .++\`   %s"
+"${c3}                 \`xxx/   %s"
+"${c3}                \`+xxxx:   %s"
+"${c4}               \`+xxxxxx:   %s"
+"${c4}               -+xxxxxx+:   %s"
+"${c2}             \`/:-:++xxxx+:   %s"
+"${c2}            \`/++++/+++++++:   %s"
+"${c2}           \`/+++++xxxx+++++:   %s"
+"${c1}          \`/+++o"${c1}"xxxxxxxx"${c1}"xxxx/\`  %s"
+"${c1}         "${c1}".+"${c1}"xxxxxxxxxxxxxxsssx"${c1}"+\`  %s"
+"${c9}        .xxsssxxx+"${c11}"DEEP"${c9}"+xxsssss+\`  %s"
+"${c9}       -xssssssxx+"${c11}"DARK"${c9}"+xsssssssx.  %s"
+"${c9}      :xsssssss/"${c11}"FAN+TASY"${c9}"\ssssx+++.  %s"
+"${c10}     /xssssssx/          \sssxxx/-   %s"
+"${c10}   \`/xsssssx+/            \+xssssx+-  %s"
+"${c10}  \`+ssx+:-\`                 \`.-/xxsx:  %s"
+"${c10} \`++:.                           \`-/+/  %s"
+"${c10} .\`                                 \`/%s") 
 		;;
 
 		"Mint")
@@ -3044,7 +3044,7 @@ infoDisplay () {
 	[[ "${asc_distro}" ]] && myascii="${asc_distro}"
 	case ${myascii} in
 		"Arch Linux - Old"|"Fedora"|"Mandriva"|"Mandrake"|"Chakra"|"Sabayon"|"Slackware"|"Mac OS X"|"Trisquel"|"Kali Linux"|"Jiyuu Linux") labelcolor=$(getColor 'light blue');;
-		"Arch Linux"|"Frugalware"|"Mageia") labelcolor=$(getColor 'light purple');;
+		"Arch Linux"|"Frugalware"|"Mageia") labelcolor=$(getColor 'light blue');;
 		"Mint"|"LMDE"|"openSUSE"|"LinuxDeepin"|"DragonflyBSD"|"Manjaro"|"Manjaro-tree"|"Android") labelcolor=$(getColor 'light green');;
 		"Ubuntu-3color"|"FreeBSD"|"Debian"|"BSD"|"Red Hat Linux"|"Peppermint"|"Cygwin"|"Fuduntu"|"NetBSD"|"Scientific Linux"|"DragonFlyBSD"|"BackTrack Linux") labelcolor=$(getColor 'light red');;
 		"CrunchBang"|"SolusOS"|"Viperr"|"elementary"*) labelcolor=$(getColor 'dark grey');;

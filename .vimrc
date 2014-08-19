@@ -44,8 +44,8 @@ set laststatus=2
 " Colors
 colorscheme ahoka
 " set colorcolumn=80
-set cursorline
-set cursorcolumn
+" set cursorline
+" set cursorcolumn
 hi CursorLine   ctermfg=white
 hi CursorColumn ctermfg=white
 

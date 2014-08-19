@@ -6,14 +6,13 @@ Xft.autohint:           0
 Xft.hintstyle:          hintfull
 Xft.lcdfilter:          lcddefault
 
-URxvt*font:             xft:meslo lg s for powerline:pixelsize=14:antialias=false,\
+URxvt*font:             xft:Ubuntu Mono:pixelsize=16:antialias=false,\
                         xft:Fantasque Sans Mono:pixelsize=15:antialias=false,\
-                        xft:xhei intelt:pixelsize=14:antialias=false
-URxvt*boldFont:         xft:meslo lg s for powerline:pixelsize=14:antialias=false,\
+                        xft:xhei square:pixelsize=14:antialias=false
+URxvt*boldFont:         xft:Ubuntu Mono:pixelsize=16:antialias=false,\
                         xft:Fantasque Sans Mono:pixelsize=15:antialias=false,\
-                        xft:xhei intelt:pixelsize=14:antialias=false
-                        
-URxvt*imFont:           xft:meslo lg s for powerline:pixelsize=14
+                        xft:xhei square:pixelsize=14:antialias=false                    
+URxvt*imFont:           xft:Ubuntu Mono:pixelsize=16
 
 !Input Method
 URxvt*preeditType:      Root
@@ -32,39 +31,32 @@ URxvt.perl-ext-common:  default,matcher
 URxvt.matcher.button:   1
 URxvt.url-launcher:     /usr/bin/firefox
 
-URxvt*background:       [93]#171717
+URxvt*background:       [91]#171717
 URxvt*foreground:       #DDDADC
 URxvt*cursorColor:      #c8c8c8
 URxvt.colorUL:          #8F7798
 
 !Black
-*color0:                #3E3E3F
-*color8:                #484849
-
+*color0:                #6E6E70
+*color8:                #78787A
 !Red
-*color1:                #b56473
-*color9:                #d39baa
-
+*color1:                #d27381
+*color9:                #d794a7
 !Green
-*color2:                #869273
-*color10:               #beb0aa
-
+*color2:                #71c491
+*color10:               #97cab2
 !Yellow
-*color3:                #b59273
-*color11:               #d3b0aa
-
+*color3:                #c2c481
+*color11:               #cdcaa7
 !Blue
-*color4:                #8764a1
-*color12:               #be9bbf
-
+*color4:                #8163e2
+*color12:               #a289e8
 !Magenta
-*color5:                #b564a1
-*color13:               #d39bbf
-
+*color5:                #d263d2
+*color13:               #d789de
 !Cyan
-*color6:                #8692a1
-*color14:               #beb0bf
-
+*color6:                #71b5e2
+*color14:               #97c0e8
 !White
 *color7:                #a5a5a5
 *color15:               #FFFFFF

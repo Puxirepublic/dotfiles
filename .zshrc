@@ -47,7 +47,7 @@ alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"
 alias amix='alsamixer'
 alias wee='weechat-curses'
 alias mu='xdg_menu --format awesome --root-menu /etc/xdg/menus/kde-applications.menu >~/.config/awesome/kdemenu.lua'
-alias jppol="LC_ALL=ja_JP.utf8 playonlinux --run"
+alias jpol="LC_ALL=ja_JP.utf8 playonlinux --run"
 
 alias paci='sudo pacman -S'
 alias pacs='sudo pacman -Ss'
