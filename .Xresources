@@ -23,7 +23,7 @@ URxvt.fading:           false
 URxvt.shading:          false
 URxvt.geometry:         135x39
 URxvt.depth:            32
-URxvt.saveLines:        5000
+URxvt.saveLines:        10000
 URxvt*termName:         rxvt-unicode-256color
 urxvt*internalBorder:   0
 

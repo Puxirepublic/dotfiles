@@ -46,11 +46,11 @@ map <C-2> :sbclose<Return>
 map <C-3> thttp://www.bilibili.com/<Return>
 map <C-4> thttps://delicious.com/pudongrepublic<Return>
 
-set focuscontent
 set complete=lb
 set hintchars=asdfgqwert
 set titlestring=DarkSouls
 source! /home/puxi/.vimperatorrc.local
+"set focuscontent
 "vim: set ft=vimperator:
 
 style -name statusbar chrome://* <<EOM

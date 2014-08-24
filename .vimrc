@@ -5,7 +5,8 @@ call vundle#rc()
 
 Bundle 'itchyny/lightline.vim'
 
-filetype plugin indent on     " required
+filetype plugin indent on
+syntax on
 
 let g:lightline = {
       \ 'colorscheme': 'jellybeans',
@@ -18,12 +19,12 @@ let g:lightline = {
 
 
 " Settings
-syntax on
 set encoding=utf-8
 set tabstop=4
 set shiftwidth=4
 set smarttab
 set incsearch
+set hlsearch
 set ignorecase
 set smartcase
 set backspace=2
@@ -31,15 +32,18 @@ set autoindent
 set formatoptions=c,q,r,t
 set textwidth=79
 set ruler
-set hlsearch
-set showcmd
 set number
+set showcmd
 set showmatch
 set background=dark
 set cindent
-set viminfo+=n~/.vim/viminfo
 set mouse=a
+set expandtab
+set wrap
+set linebreak
+set nolist
 set laststatus=2
+set viminfo+=n~/.vim/viminfo
 
 " Colors
 colorscheme ahoka
@@ -53,9 +57,4 @@ hi CursorColumn ctermfg=white
 nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 command W w !sudo tee % > /dev/null
 
-
-set expandtab " Use the appropriate number of spaces to insert a <Tab>.
-" Spaces are used in indents with the '>' and '<' commands
-" and when 'autoindent' is on. To insert a real tab when
-" 'expandtab' is on, use CTRL-V <Tab>.
 

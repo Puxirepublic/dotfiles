@@ -26,6 +26,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export HISTFILE=~/.zsh/zsh_istory
 export LESSHISTFILE=/dev/null
+
+export LIBVA_DRIVER_NAME=vdpau
+export VDPAU_DRIVER=r600
 # export MANPATH="/usr/local/man:$MANPATH"
 # # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
