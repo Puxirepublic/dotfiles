@@ -40,7 +40,8 @@ noremap p P
 map gt <C-t>
 map J <C-d>
 map K <C-u>
-"map ZZ <lt>ZQ>
+map s :stylish popup
+
 map <C-1> :sidebar<Space>bookmarks<Return>
 map <C-2> :sbclose<Return>
 map <C-3> thttp://www.bilibili.com/<Return>

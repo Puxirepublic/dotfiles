@@ -1,14 +1,21 @@
+vo=opengl-hq:lscale=spline36:cscale=spline36:dither-depth=8
 hwdec=vdpau
-vo=opengl-hq
 geometry=50%:50%
-autofit=1280x720
 screen=1
 ao=alsa
 softvol=yes
-softvol-max=600
+softvol-max=200
 msg-module=no
-msg-color=yes                 # moar colors!!
+msg-color=yes                # moar colors!!
 framedrop=yes                # Drop frames to preserve audio/video sync.
 alang=jpn,japanese
 slang=cn,en
-#autofit-larger=90%x90%
+#autofit=1280x720
+autofit-larger=90%x90%
+
+osd-bar-align-x=0
+osd-bar-align-y=0.95
+osd-bar-h=0.1
+osd-bar-w=100
+osd-border-size=0
+osd-color='#A172D2'
