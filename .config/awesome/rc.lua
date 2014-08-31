@@ -281,7 +281,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "Next",  function () awful.client.moveresize( 1,   1,   -2,  -2) end),
     awful.key({ modkey }, "Prior", function () awful.client.moveresize(-1,  -1,    2,   2) end),
     --APPS
-    awful.key({ modkey,            }, "a", function () awful.util.spawn("dolphin") end),
+    awful.key({ modkey,            }, "d", function () awful.util.spawn("dolphin") end),
     awful.key({ modkey,            }, "f", function () awful.util.spawn("firefox") end),
     awful.key({ "Control",         }, "Escape", function () awful.util.spawn("ksysguard") end),
     awful.key({ modkey,            }, "z", function () awful.util.spawn("goldendict") end),
