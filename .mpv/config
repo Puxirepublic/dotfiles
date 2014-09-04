@@ -6,13 +6,13 @@ ao=alsa
 softvol=yes
 softvol-max=200
 msg-module=no
-msg-color=yes                # moar colors!!
-framedrop=yes                # Drop frames to preserve audio/video sync.
+msg-color=yes
+framedrop=yes
+autofit=1280x720
 alang=jpn,japanese
 slang=cn,en
-#autofit=1280x720
-autofit-larger=90%x90%
 
+# for ricing
 osd-bar-align-x=0
 osd-bar-align-y=0.95
 osd-bar-h=0.1
