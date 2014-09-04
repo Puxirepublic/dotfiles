@@ -1,4 +1,1 @@
-dotsu
-=====
-
 dotfiles
