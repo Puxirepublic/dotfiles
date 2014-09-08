@@ -14,8 +14,8 @@ slang=cn,en
 
 # for ricing
 osd-bar-align-x=0
-osd-bar-align-y=0.95
-osd-bar-h=0.1
+osd-bar-align-y=1
+osd-bar-h=0.5
 osd-bar-w=100
 osd-border-size=0
 osd-color='#A172D2'
